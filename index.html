@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>USA Remote Jobs & Reward Opportunities | NextPath Careers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#111827;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1250px;
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+background:#ffffff;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#2563eb;
+}
+
+.logo span{
+color:#10b981;
+}
+
+.nav-btn{
+background:#2563eb;
+color:white;
+padding:12px 24px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+}
+
+.hero-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+background:#10b981;
+border-radius:50px;
+font-size:14px;
+font-weight:600;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:22px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.9;
+opacity:0.95;
+margin-bottom:35px;
+}
+
+.hero-btn{
+display:inline-block;
+padding:18px 34px;
+background:#10b981;
+color:white;
+text-decoration:none;
+border-radius:14px;
+font-size:18px;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover{
+transform:translateY(-4px);
+background:#0d9a6c;
+}
+
+.hero-image{
+flex:1;
+min-width:300px;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:550px;
+border-radius:24px;
+box-shadow:0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* OFFERS */
+
+.offers{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:44px;
+margin-bottom:15px;
+}
+
+.section-title p{
+font-size:18px;
+color:#6b7280;
+}
+
+.offer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.offer-card{
+background:white;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 10px 35px rgba(0,0,0,0.06);
+transition:0.3s;
+}
+
+.offer-card:hover{
+transform:translateY(-6px);
+}
+
+.offer-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.offer-content{
+padding:30px;
+}
+
+.offer-tag{
+display:inline-block;
+padding:6px 14px;
+background:#dbeafe;
+color:#2563eb;
+font-size:13px;
+font-weight:600;
+border-radius:50px;
+margin-bottom:18px;
+}
+
+.offer-content h3{
+font-size:28px;
+margin-bottom:16px;
+line-height:1.3;
+}
+
+.offer-content p{
+color:#6b7280;
+line-height:1.9;
+margin-bottom:28px;
+}
+
+.offer-btn{
+display:inline-block;
+width:100%;
+text-align:center;
+padding:16px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:14px;
+font-weight:600;
+transition:0.3s;
+}
+
+.offer-btn:hover{
+background:#1e40af;
+}
+
+/* INSIGHT SECTION */
+
+.features{
+padding:80px 0;
+background:white;
+}
+
+.insight-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.insight-card{
+background:#ffffff;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.07);
+transition:0.3s;
+border:1px solid #e5e7eb;
+}
+
+.insight-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.card-top{
+padding:18px;
+font-size:20px;
+font-weight:700;
+color:white;
+text-align:center;
+}
+
+.blue{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+}
+
+.green{
+background:linear-gradient(135deg,#10b981,#059669);
+}
+
+.orange{
+background:linear-gradient(135deg,#f59e0b,#ea580c);
+}
+
+.purple{
+background:linear-gradient(135deg,#7c3aed,#6d28d9);
+}
+
+.card-body{
+padding:30px;
+}
+
+.card-body h3{
+font-size:26px;
+margin-bottom:18px;
+color:#111827;
+line-height:1.4;
+}
+
+.card-body p{
+color:#6b7280;
+line-height:1.9;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.card-body ul{
+list-style:none;
+margin-bottom:25px;
+}
+
+.card-body ul li{
+margin-bottom:12px;
+font-size:15px;
+color:#374151;
+font-weight:500;
+}
+
+.salary-box{
+background:#f3f4f6;
+padding:16px;
+border-radius:14px;
+font-size:15px;
+font-weight:600;
+color:#111827;
+text-align:center;
+}
+
+.salary-box span{
+color:#2563eb;
+font-size:18px;
+font-weight:700;
+}
+
+.reward-users{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
+}
+
+.reward-user{
+background:#f9fafb;
+padding:14px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:15px;
+font-weight:600;
+color:#111827;
+border:1px solid #e5e7eb;
+}
+
+.reward-user span{
+color:#10b981;
+font-weight:700;
+}
+
+/* CTA */
+
+.cta{
+padding:90px 0;
+background:linear-gradient(135deg,#111827,#1f2937);
+text-align:center;
+color:white;
+}
+
+.cta h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:750px;
+margin:auto;
+line-height:1.9;
+font-size:18px;
+opacity:0.9;
+margin-bottom:35px;
+}
+
+.cta a{
+display:inline-block;
+padding:18px 36px;
+background:#10b981;
+color:white;
+text-decoration:none;
+border-radius:14px;
+font-size:18px;
+font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+padding:40px 0;
+text-align:center;
+color:#94a3b8;
+font-size:14px;
+}
+
+footer p{
+margin-bottom:12px;
+line-height:1.8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.section-title h2{
+font-size:34px;
+}
+
+.cta h2{
+font-size:34px;
+}
+
+.hero-btn,
+.cta a{
+width:100%;
+text-align:center;
+}
+
+.card-body h3{
+font-size:22px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container nav">
+
+<div class="logo">
+Next<span>Path</span>
+</div>
+
+<a href="#offers" class="nav-btn">
+Explore Careers
+</a>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-wrap">
+
+<div class="hero-text">
+
+<div class="badge">
+Trusted USA Career Access Platform
+</div>
+
+<h1>
+Explore Remote Jobs & Reward Opportunities Across The USA
+</h1>
+
+<p>
+Discover trending remote positions, flexible work opportunities, reward programs, and modern career options designed for users across the United States.
+</p>
+
+<a href="#offers" class="hero-btn">
+Explore Available Offers
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Career Team">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OFFERS -->
+
+<section class="offers" id="offers">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Featured USA Opportunities
+</h2>
+
+<p>
+Explore professional and trending opportunities designed for modern online users.
+</p>
+
+</div>
+
+<div class="offer-grid">
+
+<!-- OFFER 1 -->
+
+<div class="offer-card">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Remote Job">
+
+<div class="offer-content">
+
+<div class="offer-tag">
+Remote Career Access
+</div>
+
+<h3>
+Expert Job Match - Remote (US)
+</h3>
+
+<p>
+Explore flexible remote opportunities and discover professional career paths designed for users across the United States.
+</p>
+
+<!-- SET OFFER 1 LINK HERE -->
+<a href="https://nx2bs.com/c?o=369&a=20432&s1=jobusa" class="offer-btn">
+Continue Application
+</a>
+
+</div>
+
+</div>
+
+<!-- OFFER 2 -->
+
+<div class="offer-card">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Reward Offer">
+
+<div class="offer-content">
+
+<div class="offer-tag">
+Limited Reward Program
+</div>
+
+<h3>
+McDonald's $100 Reward Access
+</h3>
+
+<p>
+Eligible users across the USA can explore limited reward opportunities and trending promotional access.
+</p>
+
+<!-- SET OFFER 2 LINK HERE -->
+<a href="https://www.af9m8trk.com/7VY11WGH/UPW123XH/?s1=mcdonal" class="offer-btn">
+Unlock Reward Access
+</a>
+
+</div>
+
+</div>
+
+<!-- OFFER 3 -->
+
+
+
+
+
+
+<!-- OFFER 4 -->
+
+<div class="offer-card">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Career Growth">
+
+<div class="offer-content">
+
+<div class="offer-tag">
+Trending USA Access
+</div>
+
+<h3>
+Smart Career & Reward Opportunities
+</h3>
+
+<p>
+Access modern online opportunities, discover flexible participation programs, and explore trusted USA-focused experiences.
+</p>
+
+<!-- SET OFFER 4 LINK HERE -->
+<a href="https://www.af9m8trk.com/7VY11WGH/3A9122KV/?s1=costco" class="offer-btn">
+Explore Opportunities
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PREMIUM INSIGHT SECTION -->
+
+<section class="features">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+USA Opportunity Insights
+</h2>
+
+<p>
+Explore high-demand remote sectors, flexible career programs, and reward opportunities trending across the United States.
+</p>
+
+</div>
+
+<div class="insight-grid">
+
+<!-- CARD 1 -->
+
+<div class="insight-card">
+
+<div class="card-top blue">
+Remote Careers
+</div>
+
+<div class="card-body">
+
+<h3>
+12,000+ Active Employees
+</h3>
+
+<p>
+Top remote companies are actively hiring professionals for customer support, virtual assistant, chat support, and flexible online positions.
+</p>
+
+<ul>
+<li>✔ Customer Support</li>
+<li>✔ Virtual Assistant</li>
+<li>✔ Data Entry Jobs</li>
+</ul>
+
+<div class="salary-box">
+Top Salary: <span>$28/hr - $62/hr</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="insight-card">
+
+<div class="card-top green">
+Flexible Work
+</div>
+
+<div class="card-body">
+
+<h3>
+8,500+ Flexible Workers
+</h3>
+
+<p>
+Delivery services and flexible platforms continue growing rapidly with better earning opportunities and work-life balance options.
+</p>
+
+<ul>
+<li>✔ Driver Partner</li>
+<li>✔ Delivery Assistant</li>
+<li>✔ Flexible Schedule</li>
+</ul>
+
+<div class="salary-box">
+Top Salary: <span>$22/hr - $51/hr</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="insight-card">
+
+<div class="card-top orange">
+Reward Programs
+</div>
+
+<div class="card-body">
+
+<h3>
+USA Reward Access
+</h3>
+
+<p>
+Trending reward programs allow eligible users to explore promotional access, gift opportunities, and bonus reward experiences.
+</p>
+
+<ul>
+<li>✔ Gift Card Rewards</li>
+<li>✔ Bonus Promotions</li>
+<li>✔ Fast Mobile Access</li>
+</ul>
+
+<div class="salary-box">
+Reward Access: <span>Up To $100+</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="insight-card">
+
+<div class="card-top purple">
+Top Participants
+</div>
+
+<div class="card-body">
+
+<h3>
+Top Reward Activity
+</h3>
+
+<p>
+Recently active participants from trending USA reward and promotional access programs.
+</p>
+
+<div class="reward-users">
+
+<div class="reward-user">
+Jessica M.
+<span>$100</span>
+</div>
+
+<div class="reward-user">
+Daniel R.
+<span>$75</span>
+</div>
+
+<div class="reward-user">
+Amanda T.
+<span>$50</span>
+</div>
+
+<div class="reward-user">
+Kevin L.
+<span>$40</span>
+</div>
+
+<div class="reward-user">
+Sarah B.
+<span>$25</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Explore Trending USA Remote Careers & Rewards
+</h2>
+
+<p>
+Access modern remote opportunities, flexible earning experiences, and trending USA reward programs designed for mobile and desktop users.
+</p>
+
+<a href="#offers">
+Start Exploring Now
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<p>
+© 2025 NextPath Careers USA — All Rights Reserved.
+</p>
+
+<p>
+Professional opportunity discovery platform focused on remote careers, flexible work access, and reward-based promotions across the United States.
+</p>
+
+<p>
+This website is independently operated and is not affiliated with Uber, McDonald's, or any third-party companies mentioned on this page.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
